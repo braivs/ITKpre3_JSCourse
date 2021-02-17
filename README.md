@@ -1,1 +1,1 @@
-# ITKpre3_JSCourse
+This is part 3 ITK pre. 
