@@ -9,9 +9,7 @@
 </head>
 
 <body>
-  <input type="text" value="hello" id='hello-message'>
-
-  <h1 id='hello-message'>Пикап</h1>
+  <input type="text" value="hello shaman2" class='hello-message input' id='hello-message'>
 
   <ul>
     <li>Подстричься</li>
@@ -25,17 +23,16 @@
   </ul>
 
   <script>
-    var helloMessage;
-    helloMessage = 'dfdf';
-    
+    var helloMessageElement; 
     var helloMessageId;
+
     helloMessageId = 'hello-message';
-    document.getElementById();
-    
-    
-    var hello;
-    hello = 'Hello';
-    window.alert(hello);
+
+    helloMessageElement = document.getElementById(helloMessageId);
+ 
+    window.alert(helloMessageElement.value);
+    window.alert(helloMessageElement.id);
+    window.alert(helloMessageElement.className);
   </script>
 </body>
 
