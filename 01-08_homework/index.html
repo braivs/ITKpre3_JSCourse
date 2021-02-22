@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01-08 homework</title>
+</head>
+<body>
+  <label for="first-name">Имя</label>
+  <input id='first-name' value='Bri' class='first-name-input' /><br>
+  <label for="last-name">Фамилия</label>
+  <input type="text" id='last-name' value='WS'><br>
+  <label for="adress">Адрес</label>
+  <input type="text" id="adress" value='Дивный мир'><br>
+  <label for="city">Город</label>
+  <select id="city">
+    <option>moscow</option>
+    <option value="minsk" selected>minsk</option>
+    <option value="kiev">kiev</option>
+  </select><br>
+  <label for="hobbies">Хобби:</label>
+  <textarea name="" id="hobbies">Каошики, медитация, осознанные сны, йога</textarea>
+  <div id='avatarContainer'><img src="https://sun9-75.userapi.com/s/v1/ig2/9W6_SFswnHKddgh2EcjW2__-ovvJ7V1MSGe1Y5xd52QnPM0d6qgBkzalXtWLQZuDHibDM0iXAUG1vIgDyl29MUUC.jpg?size=200x0&quality=96&crop=2,89,957,957&ava=1" alt="myAvatar" id="avatar"></div> 
+
+
+
+
+
+  <script>
+  // находим элемент по айдишнику и  результат (найденный элемент) присваиваем переменной firstNameEl
+  var firstNameEl = document.getElementById('first-name');
+  // выводим в консоль значение атрибута value у найденного элемента
+  console.log('firstNameEl.value='+firstNameEl.value);
+  console.log(firstNameEl.className);
+  var lastNameEl = document.getElementById('last-name');
+  console.log('lastNameEl.value='+lastNameEl.value);
+  var adressEl = document.getElementById('adress');
+  console.log('adressEl.value='+adressEl.value);
+  var cityEl = document.getElementById('city');
+  console.log('cityEl.value='+cityEl.value);
+  var hobbiesEl = document.getElementById('hobbies');
+  console.log('hobbiesEl.value='+hobbiesEl.value);
+  console.log('hobbiesEl.innerHTML='+hobbiesEl.innerHTML);
+  var avatarEl = document.getElementById('avatar');
+  console.log('avatarEl.value='+avatarEl.value);
+  var avatarContainerEl = document.getElementById('avatarContainer');
+  console.log('avatarContainerEl.innerHTML='+avatarContainerEl.innerHTML);
+  console.log('cityEl.innerHTML='+cityEl.innerHTML);
+  console.log('avatarEl.src='+avatarEl.src);
+  console.log('avatarEl.alt='+avatarEl.alt);
+  </script>
+</body>
+</html>

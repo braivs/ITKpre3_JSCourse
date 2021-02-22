@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01-08 examen</title>
+  <link rel="stylesheet" href="exam.css">
+</head>
+
+<body>
+  <div id="formContainer">
+    <div class="elementContainer">
+      <div><label for="email">Email:</label></div>
+      <div><input type="text"id="email"></div>
+    </div>
+    <div class="elementContainer">
+      <div><label for="password">Password</label></div>
+      <div><input type="password" id="password"></div>
+    </div>
+    <div class="elementContainer" id='loginContainer'>
+      <div id="checkboxContainer">
+        <input type="checkbox" id='rememberCheckbox'>
+        <label for="rememberCheckbox">remember me </label>
+      </div>
+      <div><button type="button" id="login">Click Me!</button></div>
+    </div>
+  </div>
+
+  <script>
+    var loginButton = document.getElementById('login');
+    loginButton.onclick = function() {
+      window.alert(
+        'login:' + document.getElementById('email').value + '; ' + 
+        'password: ' + document.getElementById('password').value + '; ' +
+        'remember me: ' + document.getElementById('rememberCheckbox').checked
+        );
+    };
+  </script>
+
+</body>
+
+</html>
