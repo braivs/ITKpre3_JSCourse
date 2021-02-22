@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01-08 homework</title>
+</head>
+<body>
+  <label for="first-nameId">Имя</label>
+  <input title="Enter your name" id='first-nameId' value='Bri' class='first-nameId-input default-input' /><br>
+  <label for="last-nameId">Фамилия</label>
+  <input type="text" class="default-input" id='last-nameId' value='WS'><br>
+  <label for="adressId">Адрес</label>
+  <input type="text" class="default-input" id="adressId" value='Дивный мир'><br>
+  <label for="cityId">Город</label>
+  <select id="cityId">
+    <option>moscow</option>
+    <option value="minsk" selected>minsk</option>
+    <option value="kiev">kiev</option>
+  </select><br>
+  <label for="hobbiesId">Хобби:</label>
+  <textarea name="" id="hobbiesId">Каошики, медитация, осознанные сны, йога</textarea>
+  <div id='avatarContainerId'><img src="https://sun9-75.userapi.com/s/v1/ig2/9W6_SFswnHKddgh2EcjW2__-ovvJ7V1MSGe1Y5xd52QnPM0d6qgBkzalXtWLQZuDHibDM0iXAUG1vIgDyl29MUUC.jpg?size=200x0&quality=96&crop=2,89,957,957&ava=1" alt="myAvatar" id="avatarId"></div> 
+
+  <script>
+  var firstNameEl = document.getElementById('first-nameId');
+  var lastNameEl = document.getElementById('last-nameId');
+  var adressEl = document.getElementById('adressId');
+  var cityEl = document.getElementById('cityId');
+  var hobbiesEl = document.getElementById('hobbiesId');
+  var avatarEl = document.getElementById('avatarId');
+  var avatarContainerEl = document.getElementById('avatarContainerId');
+
+  firstNameEl.value = "NewName";
+  //lastNameEl.value = "NewLastName";
+  lastNameEl.setAttribute('value', 'NewLastName');
+  // lastNameEl.className = "temp";
+  
+  console.log('lastNameEl.className = ' + lastNameEl.className);
+  lastNameEl.className = 'default-input error-input';
+  lastNameEl.title = "Wrong last name";
+
+  avatarEl.src = 'https://sun9-67.userapi.com/s/v1/ig2/Xr-76BtbvzAr_4LoQU93NMBq75bORtMYLflyzy_d9eQ2Z7Sy9rHHSE-Yu-M-maNPpJC32BhHnA46dzvHXXHmIWhR.jpg?size=200x0&quality=96&crop=2,10,560,560&ava=1';
+  
+  avatarEl.title = 'I will be React JS developer!';
+  cityEl.value = 'kiev';
+  hobbiesEl.value = "Выходить из круга перерождения";
+
+  avatarContainerEl.innerHTML = '<ul id=\'list\'><li>1</li><li>2</li></ul>'
+
+  var list = document.getElementById('list');
+  </script>
+
+  <style>
+    .default-input {
+      border: green 5px solid;
+      padding: 5px;
+    }
+
+    .error-input {
+      border-color: red;
+    }
+  </style>
+</body>
+</html>
