@@ -1,5 +1,14 @@
+function alertValues(elementParameter) {
+  console.log(elementParameter.value);
+  console.log(elementParameter.className);
+}
+
 var firstNameEl = document.getElementById('first-nameId');
+alertValues(firstNameEl);
+
 var lastNameEl = document.getElementById('last-nameId');
+alertValues(lastNameEl);
+
 var adressEl = document.getElementById('adressId');
 var cityEl = document.getElementById('cityId');
 var hobbiesEl = document.getElementById('hobbiesId');
@@ -7,7 +16,10 @@ var avatarEl = document.getElementById('avatarId');
 var avatarContainerEl = document.getElementById('avatarContainerId');
 
 firstNameEl.value = "NewName";
+alertValues(firstNameEl);
+
 lastNameEl.setAttribute('value', 'NewLastName');
+alertValues(lastNameEl);
 
 console.log('lastNameEl.className = ' + lastNameEl.className);
 lastNameEl.className = 'default-input error-input';
