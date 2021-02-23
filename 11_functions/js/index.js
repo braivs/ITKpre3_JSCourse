@@ -6,6 +6,14 @@ var hobbiesEl = document.getElementById('hobbiesId');
 var avatarEl = document.getElementById('avatarId');
 var avatarContainerEl = document.getElementById('avatarContainerId');
 
+function alertValues(params) {
+  console.log(1);
+  console.log(2);
+  console.log(3);
+}
+
+alertValues();
+
 firstNameEl.value = "NewName";
 lastNameEl.setAttribute('value', 'NewLastName');
 
