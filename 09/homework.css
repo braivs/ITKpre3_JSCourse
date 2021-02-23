@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#formContainer {
+  background-color: #CFE2F3;
+  padding: 1px 10px 5px 10px;
+  border: 1px solid black;
+}
+
+.elementContainer {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+#loginContainer {
+  padding: 10px 5px;
+  display: flex;
+  
+}
+
+#checkboxContainer{
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 120px;
+}
+
+#login {
+  background-color: #CFE2F3;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#errormsg {
+  visibility: hidden;
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+}
