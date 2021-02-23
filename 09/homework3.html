@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal page</title>
+  <link rel="stylesheet" href="homework3.css">
+</head>
+
+<body id="global">
+  <form action="" id="formId">
+    <div id="partOne">
+      <label for="fistNameId">First Name</label><br>
+      <input type="text" id="firstNameId" class="firstName" value="Dmitry"><br>
+      <label for="secondNameId">Second Name</label><br>
+      <input type="text" id="secondNameId" class="secondName" value="Kuziberdin">
+      <p>Sex</p>
+      <input type="radio" name="gender" id="SexMId" class="SexM" checked>
+      <label for="SexMId">M</label>
+      <input type="radio" name="gender" id="SexFId" class="SexF">
+      <label for="SexFId">F</label><br>
+      <label for="relatinshipsID">Single</label>
+      <input type="checkbox" id="relatinshipsID" class="relatinships" checked>
+    </div>
+    <div id="partTwo">
+      <div><img
+          src="https://sun9-75.userapi.com/s/v1/ig2/9W6_SFswnHKddgh2EcjW2__-ovvJ7V1MSGe1Y5xd52QnPM0d6qgBkzalXtWLQZuDHibDM0iXAUG1vIgDyl29MUUC.jpg?size=200x0&quality=96&crop=2,89,957,957&ava=1"
+          alt="" id="avatarID" class="avatar"></div>
+      <label for="cityId">City:</label><br>
+      <select id="cityId" class="city">
+        <option>Minsk</option>
+        <option>Moscow</option>
+        <option>Arambol</option>
+        <option>Mumbay</option>
+        <option>Querim</option>
+      </select><br>
+      <label for="hobbiesId">About me</label><br>
+      <textarea id="hobbiesId" class="hobbies">I am good man&#13;&#10;I want find job</textarea>
+    </div>
+  </form>
+  <button id="clickButton">Change picture</button>
+
+
+  <footer>
+    <script src="homework3.js"></script>
+  </footer>
+</body>
+
+</html>
