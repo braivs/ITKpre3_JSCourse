@@ -1,31 +1,29 @@
 function setMyNameToAllInputs() {
-  var input = document.getElementsByTagName("input");
-  var name = "BriWS";
+  var input = document.getElementsByTagName('input');
+  var name = 'BriWS';
   input[0].value = name;
   input[1].value = name;
   input[2].value = name;
 }
 
 function setMyLastNameToAllInputs() {
-  var input = document.getElementsByTagName("input");
-  var name = "Ustyugov"
+  var input = document.getElementsByTagName('input');
+  var name = 'Ustyugov'
   input[0].value = name;
   input[1].value = name;
   input[2].value = name;
 }
 
-function changeValue(newValue) {
-  var input = document.getElementsByTagName("input");
-  input[0].value = newValue;
-  input[1].value = newValue;
-  input[2].value = newValue;
+function changeValue(id, newValue) {
+  var input = document.getElementById(id);
+  input.value = newValue;
 }
 
 // setMyLastNameToAllInputs();
 // setMyNameToAllInputs();
-changeValue("BriWS");
-changeValue("Ustyugov");
-changeValue("Yurevich");
+changeValue('inputId1', 'BriWS');
+changeValue('inputId2', 'Ustyugov');
+changeValue('inputId3', 'Yurevich');
 
 function setError(id) {
   document.getElementById(id).className = 'error';
@@ -35,17 +33,17 @@ setError('inputId1');
 setError('inputId2');
 setError('inputId3');
 
-// setError("div-id");
-// setError("textarea-id");
+// setError('div-id');
+// setError('textarea-id');
 
-function getSumm(number1, number2) {
-  return number1 + number2;
+function getSum(number1, number2) {
+  return parseInt(number1) + parseInt(number2);
 }
-var result1 = getSumm(23, 34);
+var result1 = getSum(23, 34);
 console.log(result1);
-var result2 = getSumm(3434, 12);
+var result2 = getSum(3434, 12);
 console.log(result2);
-var result3 = getSumm(23, 23);
+var result3 = getSum(23, 23);
 console.log(result3);
 
 function sayHello() {
@@ -55,12 +53,25 @@ function sayHello() {
 setTimeout(sayHello, 1000);
 // setTimeout(setError, 1000);
 function timeoutError() {
-  setError("div-id");
-  setError("textarea-id");
+  setError('div-id');
+  setError('textarea-id');
 }
 setTimeout(timeoutError, 1000);
 
 function hideElement(id) {
-  
-  
+  document.getElementById(id).style.visibility = 'hidden'; 
 }
+
+function showElement(id) {
+  document.getElementById(id).style.visibility = 'visible';
+}
+
+i = 0;
+// setInterval(() => {
+  //   i++;
+  //   changeValue('counterInputId', i);
+  // }, 1000);
+setInterval(function () {
+  i++;
+  changeValue('counterInputId', i);
+}, 1000);

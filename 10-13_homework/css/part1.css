@@ -2,15 +2,6 @@
   border: red 1px solid;
 }
 
-#hideMeDiv-id {
-  border: 1px solid grey;
-  display: inline-block;
-  /* display: none; */
-  /* /* width: 0px; */
-  /* height: 0px;  */
-  /* overflow: hidden; */
-  /* position: absolute; */
-  /* top: -1000000000px; */
-  /* opacity: 0; */
-  visibility: hidden;
+#counterInputId {
+  text-align: center;
 }
