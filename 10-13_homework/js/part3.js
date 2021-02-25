@@ -56,7 +56,6 @@ function getConcreteFunctionByName(name) {
 // Запуск:
 function runTest3() {
   var elements = document.getElementsByClassName("some-class");
-  debugger;
   var concretteProccessor = getConcreteFunctionByName("deleter");
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
