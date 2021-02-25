@@ -45,35 +45,47 @@ function getConcreteFunctionByName(name) {
       return shower;
     case "border":
       return border;
+    case "addErrorClass":
+      return addErrorClass;
+    case "add100PercentWidthClass":
+      return add100PercentWidthClass;
+    case "clearValue":
+      return clearValue;
   }
 }
-/*
-Запуск:
-var elements = document.getElementsByClassName("some-class");
-var concretteProccessor = getConcreteFunctionByName("deleter");
-for (var i = 0; i < elements.length; i++) {
-  var element = elements[i];
-  concretteProccessor(element);
+// Запуск:
+function runTest3() {
+  var elements = document.getElementsByClassName("some-class");
+  debugger;
+  var concretteProccessor = getConcreteFunctionByName("deleter");
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    concretteProccessor(element);
+  }
 }
-Но почему-то с deleter-ом накладка, удаляет только два элемента. 
-*/
+// Но почему-то с deleter-ом накладка, удаляет только два элемента. 
 
-// ==4==
-function addErrorClass(element) {    
-  }
-  
-  function add100PercentWidthClass(element) {    
-  }
-  
-  function clearValue(element) {    
-  }
-
+// == 4 ==
+function addErrorClass(element) {
+  element.classList.add('error');
+}
+function add100PercentWidthClass(element) {
+  element.style.width = "100%";
+}
+function clearValue(element) {
+  element.value = "";
+}
 function proccessElements(elements, processors) {
   for (i = 0; i < elements.length; i++) {
-    var element = elements(i);
+    var element = elements[i];
     for (j = 0; j < processors.length; j++) {
-      var processor = processors(j)
-      processor(element); 
+      var processor = processors[j];
+      var concretteProccessor = getConcreteFunctionByName(processor);
+      concretteProccessor(element);
     }
   }
+}
+function runTest4() {
+  var elements = document.getElementsByClassName("some-class");
+  proccessElements(elements, ["addErrorClass", "add100PercentWidthClass", "clearValue"]);
 }
