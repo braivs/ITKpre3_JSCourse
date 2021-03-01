@@ -96,3 +96,42 @@ body {
     }
   }
 }
+
+// == Задача 4 ==
+.redBorder {
+  border: 2px solid red;
+}
+
+// == Задача 5 == 
+.thumb {
+  cursor: pointer;
+}
+#full-size-img-container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid orange;
+  #full-size-img {
+    visibility: hidden;
+  }
+}
+
+// Задача 6: Боковое выезжающее меню
+#entire-page {
+  position: relative;
+  #sidebar-menu {
+    position: absolute;
+    width: 200px;
+    background-color: grey;
+    color: white;
+    top: 30px;
+    left: -180px;
+    transition: 1s;
+    &.active {
+      left: 0px;
+    }
+  }
+  #gamburger-menu {
+    width: 20px;
+  }
+}
+

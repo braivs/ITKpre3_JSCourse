@@ -51,13 +51,52 @@
   </div>
 
   <p>Задача 3: меняем местами значения</p>
-  <input id='first-value' type='text' />
-  <input id='second-value' type='text' />
+  <input id='first-value' type='text' value='первое значение' />
+  <input id='second-value' type='text' value='второе значение'>
   <hr />
   <button id='change-values-btn'>Change values</button>
+
+  <p>Задача 4: Подсветка ошибки ввода</p>
+  <div id="numbersParent">
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+    <input type='number' class='numbers' />
+  </div>
+
+  <p>Задача 5</p>
+  <div id='thumbnails'>
+    <img src="img/01_thumb.jpg" alt="" class="thumb" data-src-full="img/01_original.jpg">
+    <img src="img/02_thumb.jpg" alt="" class="thumb" data-src-full="img/02_original.jpg">
+    <img src="img/03_thumb.jpg" alt="" class="thumb" data-src-full="img/03_original.jpg">
+  </div>
+  <hr />
+  <div id='full-size-img-container'>
+    <img id='full-size-img' src='' alt="Оригинальное изображение" />
+  </div>
+
+  <p>Задача 6: Боковое выезжающее меню</p>
+  <div id='entire-page'>
+    <div id='sidebar-menu'>
+      <ul>
+        <li>О нас</li>
+        <li>Инкубатор</li>
+        <li>Счастье</li>
+        <li>Трудоустройство</li>
+      </ul>
+    </div>
+    <img id='gamburger-menu' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png' />
+  </div>
   <footer>
     <script src="js/homework.js"></script>
   </footer>
 </body>
+
 
 </html>
