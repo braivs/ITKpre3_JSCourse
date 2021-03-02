@@ -116,6 +116,13 @@ body a {
 
 #entire-page {
   position: relative;
+  margin-bottom: 130px;
+}
+#entire-page.active #sidebar-menu {
+  left: 0px;
+}
+#entire-page.active #gamburger-menu {
+  transform: rotate(90deg);
 }
 #entire-page #sidebar-menu {
   position: absolute;
@@ -126,10 +133,35 @@ body a {
   left: -180px;
   transition: 1s;
 }
-#entire-page #sidebar-menu.active {
-  left: 0px;
-}
 #entire-page #gamburger-menu {
   width: 20px;
+}
+
+.main-menu-item .sub-menu {
+  display: none;
+}
+
+.main-menu-item.show .sub-menu {
+  display: block;
+}
+
+.container {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.context-menu {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=homework.css.map */

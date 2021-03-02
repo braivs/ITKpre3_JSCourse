@@ -115,9 +115,18 @@ body {
   }
 }
 
-// Задача 6: Боковое выезжающее меню
+// Задача 6-7-8: Боковое выезжающее меню
 #entire-page {
   position: relative;
+  margin-bottom: 130px;
+  &.active {
+    #sidebar-menu {
+      left: 0px;
+    }  
+    #gamburger-menu {
+      transform: rotate(90deg);
+    }
+  }
   #sidebar-menu {
     position: absolute;
     width: 200px;
@@ -126,12 +135,36 @@ body {
     top: 30px;
     left: -180px;
     transition: 1s;
-    &.active {
-      left: 0px;
-    }
   }
   #gamburger-menu {
     width: 20px;
   }
 }
 
+// Задача 9: Toggle подменю
+.main-menu-item .sub-menu {
+  display: none;
+}
+
+.main-menu-item.show .sub-menu {
+  display: block;
+}
+
+// Задача 11: Контекстное меню
+.container {
+  position: relative;
+  padding-bottom: 100px;
+}
+.context-menu {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.hidden {
+  display: none;
+}

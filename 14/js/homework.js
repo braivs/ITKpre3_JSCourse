@@ -79,16 +79,60 @@ thumbnails.addEventListener('click', function (event) {
   }
 })
 
-// == Задача 6-7: Боковое выезжающее меню ==
+// == Задача 6-7-8: Боковое выезжающее меню ==
 var sidebarMenu = document.getElementById('sidebar-menu');
 var gamburgerMenu = document.getElementById('gamburger-menu');
+var entirePage = document.getElementById('entire-page');
 function addClassActiveListener() {
-  if (sidebarMenu.classList.contains('active')) {
-    sidebarMenu.classList.remove('active');
-    gamburgerMenu.style.transform = 'rotate(180deg)'
+  if (entirePage.classList.contains('active')) {
+    entirePage.classList.remove('active');
   } else {
-    sidebarMenu.classList.add('active');
-    gamburgerMenu.style.transform = 'rotate(90deg)'
+    entirePage.classList.add('active');
   }
 }
 gamburgerMenu.addEventListener('click', addClassActiveListener);
+
+// Задача 9: Toggle подменю
+var mainMenu = document.getElementById('main-menu');
+mainMenu.addEventListener('click', function (event) {
+  var currentElement = event.target.parentElement;
+  // v2 с ф-ей closest:
+  // var currentElement = event.target.closest('.main-menu-item');
+  if (currentElement.classList.contains('show')) {
+    currentElement.classList.remove('show');
+  } else {
+    currentElement.classList.add('show');
+  }
+})
+
+// Задача 10: Гармошка
+var mainMenu = document.getElementById('main-menu2');
+mainMenu.addEventListener('click', function (event) {
+  // дополнительно нахожу все классы содержащие show 
+  var containsShowClasses = mainMenu.getElementsByClassName('show');
+  var currentElement = event.target.parentElement;
+  // удаляю класс show у всех открытых
+  while (containsShowClasses.length !== 0) {
+    containsShowClasses[0].classList.remove('show'); 
+  }
+  if (currentElement.classList.contains('show')) {
+    currentElement.classList.remove('show');
+  } else {
+    currentElement.classList.add('show');
+  }
+})
+
+//Задача 11: Контекстное меню
+var contextMenu = document.getElementById('context-menu');
+var contextableArea = document.getElementById('area-with-context-menu');
+function hideContextMenu(e){
+		contextMenu.classList.add('hidden');
+}
+function showContextMenu(e) {
+      e.preventDefault();
+      contextMenu.style.left = e.offsetX + 'px';
+      contextMenu.style.top = e.offsetY + 'px';
+      contextMenu.classList.remove('hidden');
+};
+contextableArea.addEventListener('contextmenu', showContextMenu);
+contextableArea.addEventListener('click', hideContextMenu);

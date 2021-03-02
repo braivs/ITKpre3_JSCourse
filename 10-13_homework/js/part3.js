@@ -54,15 +54,25 @@ function getConcreteFunctionByName(name) {
   }
 }
 // Запуск:
+// C deleter-ом накладка, удаляет только два элемента.
+// В такой ситуации работает c while, особый случай для deleter потому что индексы сдвигаются
 function runTest3() {
   var elements = document.getElementsByClassName("some-class");
-  var concretteProccessor = getConcreteFunctionByName("deleter");
-  for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
-    concretteProccessor(element);
+  var concretteProccessor = getConcreteFunctionByName("addErrorClass");
+  console.log(concretteProccessor);
+  if (concretteProccessor === deleter) {
+    while (elements.length !==0) {
+      var element = elements[0];
+      concretteProccessor(element);
+    }
+  } else {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      concretteProccessor(element);
+    }
   }
 }
-// Но почему-то с deleter-ом накладка, удаляет только два элемента. 
+
 
 // == 4 ==
 function addErrorClass(element) {
