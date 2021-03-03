@@ -1,0 +1,46 @@
+.main-content .section-article li {
+  padding: 10px;
+}
+
+.main-content .section-entertainment li {
+  padding: 10px;
+}
+
+.main-content .section-development li:hover {
+  background-color: darkolivegreen;
+}
+
+.main-content .section-entertainment li:hover {
+  background-color: cadetblue;
+}
+
+.main-content .section-article .footer {
+  background-color: white;
+}
+
+.main-content .section-development .footer {
+  color: darkolivegreen;
+}
+
+.main-content .section-entertainment .footer {
+  color: cadetblue;
+}
+
+
+.main-content .section-article li:hover a {
+  color: white;
+}
+
+.main-content .section-article h2 {
+  color: white;
+  padding: 10px;
+}
+
+.main-content .section-development h2 {
+  background-color: darkolivegreen;
+}
+
+.main-content .section-entertainment h2 {
+  background-color: cadetblue;
+}
+
