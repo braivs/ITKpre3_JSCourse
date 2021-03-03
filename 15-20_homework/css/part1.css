@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.briws-calculator {
+  width: 450px;
+  height: 255px;
+  background-color: #CFE2F3;
+  padding: 30px;
+}
+.briws-calculator hr {
+  border: 1px solid black;
+  margin-top: 30px;
+}
+.briws-calculator .operations-block {
+  display: flex;
+  justify-content: center;
+}
+.briws-calculator .operations-block button {
+  width: 54px;
+  height: 43px;
+  margin-left: 30px;
+}
+.briws-calculator .inputs-block {
+  display: flex;
+  justify-content: space-between;
+}
+.briws-calculator .inputs-block .input-block {
+  text-align: center;
+}
+.briws-calculator .inputs-block input {
+  width: 120px;
+  text-align: center;
+}
+.briws-calculator .result-block {
+  text-align: center;
+  margin-top: 55px;
+}

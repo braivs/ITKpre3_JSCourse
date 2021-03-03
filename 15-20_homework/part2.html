@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор v2</title>
+  <link rel="stylesheet" href="css/part1.css">
+</head>
+<body>
+  <div class='briws-calculator'>
+    <div class='operations-block'>
+      <button class='operation-button' id='buttonPlus'>+</button>
+      <button class='operation-button' id='buttonMinus'>-</button>
+      <button class='operation-button' id='buttonMultiply'>*</button>
+      <button class='operation-button' id='buttonDevide'>/</button>
+    </div>
+    <div class='separator'>
+      <hr>
+    </div>
+    <div class="inputs-block">
+      <div class='input-block'>
+        <label for="">number 1</label><br>
+        <input type="number" value='100' id='number1'>
+      </div>
+      <div class='input-block'>
+        <label for="">number 2</label><br>
+        <input type="number" value='5' id='number2'>
+      </div>
+    </div>
+    <div class="result-block">
+      результат: <span id="resultBox"></span>
+    </div>
+  </div>
+
+
+  <footer>
+    <script src='js/math.js'></script>
+    <script src='js/calculator.js'></script>
+  </footer>
+</body>
+</html>
