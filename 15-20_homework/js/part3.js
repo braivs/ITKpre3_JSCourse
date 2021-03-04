@@ -3,7 +3,7 @@ var buttons = document.getElementsByTagName('button');
 // нахожу куда выводить input
 var result = document.getElementsByTagName('input')[0];
 
-// определяю по какой кнопке кликнул
+// определяю по какой кнопке кликнул и вывожу значения в input  
 function onButtonClick(eventObject) {
   var clickedElement = eventObject.currentTarget;
   var buttonValue = clickedElement.innerHTML;
