@@ -7,6 +7,10 @@
   height: 255px;
   background-color: #CFE2F3;
   padding: 30px;
+  hr {
+    border: 1px solid black;
+    margin-top: 30px;
+  }
   .operations-block {
     display: flex;
     justify-content: center;

@@ -1,12 +1,15 @@
-.briws-calculator hr {
-  border: 1px solid black;
-  margin-top: 30px;
+.briws-calculator .inputs-block .input-block select {
+  width: 120px;
+  text-align-last: center;
+}
+.briws-calculator .operations-block {
+  margin-top: 50px;
 }
 .briws-calculator .operations-block button {
   width: 240px;
   height: 40px;
 }
 .briws-calculator .result-block {
+  margin-top: 20px;
   text-align: center;
-  margin-top: 55px;
 }
