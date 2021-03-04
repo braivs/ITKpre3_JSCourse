@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#briws-calculator {
+  border: 1px solid black;
+  width: 350px;
+  height: 255px;
+  background-color: #CFE2F3;
+  padding: 30px;
+}
+#briws-calculator #result-block input {
+  width: 280px;
+  height: 30px;
+  background-color: #CFE2F3;
+  border: 1px solid black;
+  text-align: right;
+}
+#briws-calculator #operations-block {
+  margin-top: 50px;
+}
+#briws-calculator #operations-block button {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  background-color: #CFE2F3;
+  border: 1px solid black;
+}
