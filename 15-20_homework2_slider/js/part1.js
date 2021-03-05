@@ -41,6 +41,3 @@ function changeSlideLeft() {
 
 goLeftButton.addEventListener('click', changeSlideLeft);
 goRightButton.addEventListener('click', changeSlideRight);
-
-
-
