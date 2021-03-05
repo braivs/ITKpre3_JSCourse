@@ -29,6 +29,7 @@ function numberButtonClickListener(e) {
     // если начальное значение = 0, то заменяю его значением нажатой кнопки
     displayInputEl.value = numberButton.innerHTML;
   } else {
+    // иначе дописываю
     displayInputEl.value = displayInputEl.value + numberButton.innerHTML;
   }
 }
@@ -67,7 +68,7 @@ function resultButtonClickListener() {
   } else if (operation === "/") {
     var result = divide(firstNumber, secondNumber);
   } else {
-    resultBox.value = 'operation is unknown';
+    displayInputEl.value = 'operation is unknown';
   }
   displayInputEl.value = result;
 }
