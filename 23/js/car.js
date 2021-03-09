@@ -11,5 +11,3 @@ var car1 = {
     this.speed = 10;
   } 
 };
-
-console.log(car1.engine.v);
