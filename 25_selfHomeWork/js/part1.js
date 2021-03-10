@@ -1,0 +1,7 @@
+slider1.start();
+
+
+
+
+
+
